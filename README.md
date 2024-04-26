@@ -1,5 +1,13 @@
 # Inifinit Test
 
+## Running the test
+
+Requirements : nodejs and yarn/npm 
+
+```
+npm i && npm start
+```
+
 ## Requirement
 
 The goal is for you to write a program that connects via the GitHub API to the GitHub - lodash/lodash repository and gathers a couple of statistics for us.

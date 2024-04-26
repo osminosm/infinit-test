@@ -4,6 +4,10 @@
   "main": "index.js",
   "author": "Osmane Kalache",
   "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node cli.mjs"
+  },
   "dependencies": {
     "node-fetch": "^3.3.2",
     "yauzl": "^3.1.3"
