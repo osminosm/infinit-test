@@ -22,11 +22,15 @@ Github api research :
 ```
 Possibilities on github api docs:
 1 - fine grained aproach: fetch file list -> and query content file by file on the js/ts files to be processed
-    Pros: uses github api / Cons: Overkill, there might be thousands of files to fetch, will we need to manage rate limiting ?  
-2 - fetch a zip of the repo on a certain version and do the processing in bulk next 
-    Pros: Simple / Cons: will download all repo files, depends on zip
+    Pros: uses github api a lot / Cons: Overkill, there might be thousands of files to fetch, will we need to manage rate limiting ?  
+2 - one shot: fetch a zip of the repo on a certain version and do the processing in bulk next 
+    Pros: Simple, uses github api / Cons: will download all repo files, depends on zip
+
+also it can be done using git cli but the requirement clearly states that we use github api
 
 ```
+
+Proceeding with 2
 
 ### Charachter occurency stat
 
@@ -35,8 +39,8 @@ Needs repository js/ts file
 - what about mjs or tsx -> configurable
 
 Needs to count charater occurences for a file
-- Load file into memory
-- process file content (get the stats)
+- Load file into memory (how many at the same time?)
+- process file content (get the stats) (can we parallelize ?)
 - aggregate results for the whole repository
 
 
