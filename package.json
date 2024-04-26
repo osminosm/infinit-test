@@ -1,0 +1,8 @@
+{
+  "name": "infinit-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Osmane Kalache",
+  "license": "MIT",
+  "private": false
+}
